@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+//function prototype for this file to see random.c
+void rand_string(char *s, size_t size);
 
 
 // random string generator wrapper function
@@ -21,8 +23,9 @@ char* rand_string_alloc(size_t size)
 int main()
 
 {
+//add the size as 5 because there was none before 
     char *str;
-    size_t size =   ;  //specify a value for size of word
+    size_t size = 5;  //specify a value for size of word
 
 	/* seed the randomizer */
 	srand( (unsigned)time(NULL) );
